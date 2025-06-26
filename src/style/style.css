@@ -1,0 +1,90 @@
+/* Corps de page */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #10014e;
+}
+
+/* Bloc en haut à gauche */
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container h1 {
+  font-size: 1.4rem;
+  margin: 0;
+  color: white;
+  opacity: 0.6;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Formulaire centré verticalement et horizontalement */
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Carte de connexion */
+#card {
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#card input {
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  margin-left: 30px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#buttonConnexion {
+  background-color: rgb(61, 146, 202);
+  color: white;
+  cursor: pointer;
+  margin-left: 100px;
+  margin-top: 10px;
+  width: 200px;
+  height: 30px;
+
+  border-radius: 7px;
+  border-color: white;
+}
+
+/* Responsive mobile */
+@media (max-width: 500px) {
+  #card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  #card input {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
